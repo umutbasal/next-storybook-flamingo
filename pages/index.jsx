@@ -12,6 +12,7 @@ export default function Home() {
       </Head>
         <Button>Hello</Button>
       <section>
+     <Link href="/blog"> Blog</Link> 
         <p>Your Self Introduction</p>
         <p>
           (This is a sample website - you’ll be building a site like this on{' '}
