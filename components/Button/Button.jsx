@@ -11,3 +11,5 @@ export const FlamingoButton = styled(FButton)`
 export const Button = ({ children, className, ...args }) => (
   <FlamingoButton intent={'primary'} className={classNames(className)} args={args}>{children}</FlamingoButton>
 );
+
+export default Button;
