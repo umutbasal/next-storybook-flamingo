@@ -35,25 +35,25 @@ export default function Layout({ children, home }) {
             />
           </>
         ) : (
-          <>
-            <Link href="/">
-              <a>
-                <Image
-                  priority
-                  src="/images/profile.jpg"
-                  height={108}
-                  width={108}
-                  alt={name}
-                />
-              </a>
-            </Link>
-            <h2>
+            <>
               <Link href="/">
-                <a>{name}</a>
+                <a>
+                  <Image
+                    priority
+                    src="/images/profile.jpg"
+                    height={108}
+                    width={108}
+                    alt={name}
+                  />
+                </a>
               </Link>
-            </h2>
-          </>
-        )}
+              <h2>
+                <Link href="/">
+                  <a>{name}</a>
+                </Link>
+              </h2>
+            </>
+          )}
       </header>
       <main>{children}</main>
       {!home && (

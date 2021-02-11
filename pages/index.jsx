@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/Layout'
-
 import { Button } from '../components/Button/Button'
 
 export async function getServerSideProps(context) {
