@@ -15,7 +15,7 @@ export default function Home() {
         <p>Your Self Introduction</p>
         <p>
           (This is a sample website - you’ll be building a site like this on{' '}
-          <Link href="/posts/hello-world">Read me</Link>
+          <Link href="/posts/readme">Read me</Link>
         </p>
       </section>
     </Layout>
