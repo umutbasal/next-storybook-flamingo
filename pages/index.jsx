@@ -4,7 +4,16 @@ import Layout, { siteTitle } from '../components/Layout'
 
 import { Button } from '../components/Button/Button'
 
-export default function Home() {
+export async function getServerSideProps(context) {
+    const whatsmyip = await (await fetch('https://api.ipify.org?format=json')).json();
+    return {
+      props: {
+        whatsmyip
+      }
+    }
+  }
+
+export default function Home({whatsmyip}) {
   return (
     <Layout home>
       <Head>
@@ -12,6 +21,7 @@ export default function Home() {
       </Head>
         <Button>Hello</Button>
       <section>
+        <p>{whatsmyip.ip}</p>
      <Link href="/blog"> Blog</Link> 
         <p>Your Self Introduction</p>
         <p>
