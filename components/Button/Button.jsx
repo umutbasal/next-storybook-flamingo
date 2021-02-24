@@ -5,7 +5,6 @@ import styled from 'styled-components'
 
 export const FlamingoButton = styled(FButton)`
   width: 100%;
-  color: red;
 `;
 
 export const Button = ({ children, className, ...args }) => (

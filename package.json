@@ -17,6 +17,7 @@
     "gray-matter": "^4.0.2",
     "next": "latest",
     "node-sass": "4.14",
+    "postcss": "^8.2.6",
     "postcss-flexbugs-fixes": "^4.2.1",
     "postcss-preset-env": "^6.7.0",
     "react": "^16.7.0",
